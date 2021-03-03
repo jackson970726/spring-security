@@ -107,7 +107,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     public void commence(HttpServletRequest req, HttpServletResponse resp, AuthenticationException e) throws IOException, ServletException {
                         resp.setContentType("application/json;charset=utf-8");
                         PrintWriter out = resp.getWriter();
-                        out.write("尚未登录，请先登录");
+                        out.write(new ObjectMapper().writeValueAsString("尚未登录，请先登录"));
                         out.flush();
                         out.close();
                     }
