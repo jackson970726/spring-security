@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<canvas class="cavs" width="1575" height="1337"></canvas>
+
+<div class="loginmain">
+    <div class="login-title">
+        <span>管理员登录</span>
+    </div>
+    <form action="/login.html" method="post">
+    <div class="login-con">
+        <div class="login-user">
+            <div class="icon">
+                <img src="image/user_icon_copy.png" alt="">
+            </div>
+            <input type="text" name="username" placeholder="用户名" autocomplete="off" value="">
+        </div>
+        <div class="login-pwd">
+            <div class="icon">
+                <img src="image/lock_icon_copy.png" alt="">
+            </div>
+            <input type="password" name="password" placeholder="密码" autocomplete="off" value="">
+        </div>
+        <!--<div class="login-yan">
+            <div class="icon">
+                <img src="image/key.png" alt="">
+            </div>
+            <input type="text" name="pwd" placeholder="验证码" autocomplete="off" value="">
+        </div>-->
+        <div class="login-btn">
+            <input type="submit" value="登录">
+        </div>
+    </div>
+    </form>
+</div>
+
+</body>
+</html>
+
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/ban.js"></script>
